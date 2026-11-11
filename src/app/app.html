@@ -1,0 +1,69 @@
+<main class="resume">
+  <img src="pfp.jpg" alt="Profile picture" class="profile-img">
+   <header class="intro">
+    <h1>{{ fullName }}</h1>
+    <p>
+      {{ location }} |
+      {{ phone }} |
+      <a [href]="'mailto:' + email">{{ email }}</a>
+    </p>
+  </header>
+
+  <section class="firstsec">
+    <h2>Personal Profile</h2>
+    <p>{{ profile }}</p>
+  </section>
+
+  <app-profile-card></app-profile-card>
+
+  <section class="educ">
+    <h2>Education and Achievements</h2>
+    <ul>
+      @for (educ of educ; track educ) {
+        <li>{{ educ }}</li>
+      }
+    </ul>
+  </section>
+
+  <section class="othersec">
+    <h2>Key Skills</h2>
+    <ul>
+      @for (skill of skills; track skill) {
+        <li>{{ skill }}</li>
+      }
+    </ul>
+  </section>
+
+  <section class="othersec">
+    <h2>Tools & Platforms</h2>
+    <ul>
+      @for (platforms of platforms; track platforms) {
+        <li>{{ platforms }}</li>
+      }
+    </ul>
+  </section>
+
+
+  <section class="interaction">
+    <h2>Portfolio</h2>
+    <p>Here, you can explore my projects, learn about my experiences, and see the journey of my improvements that have shaped my professional path. this space is designed for you to connect with my work and gain insights into my unique approach.</p>
+    <a href="https://anjsrn.wixsite.com/portfolio" target="_blank" rel="noopener noreferrer" class="button">View</a>
+  </section>
+
+  <section class="firstsec">
+    <h2>Angular Interaction</h2>
+    <p>{{ message }}</p>
+    <button (click)="showMessage()">Click Me</button>
+  </section>
+
+  <footer class="social-links">
+    <a href="https://www.google.com/goto?url=CAESeAHEIkXXWn5ySFG7vF3Ys49AusxJc7yDPROz3p5_Vg4dpCBz_e1LLAuzLg880_Ca4nT3HhCGhWOo-85I3f2cJBzJ_iE4NkG-s8IK73xRM5dgMKKjC5FpzNdytsvM6ydPCPTvkNbDXcXSRonXA8cClJkMsh6ScAEHuA&gsessionid=uKe3EnYyWdAA9lGZS29O6eP7WIEOlvrJF0i2js-RZpf4YZle8WHnOg" target="_blank" rel="noopener noreferrer">
+      <img src="linked.png" alt="linked in picture" class="footer-img">
+    </a>
+    <span>|</span>
+    <a href="https://github.com/arspineda2" target="_blank" rel="noopener noreferrer">
+      <img src="git.png" alt="github picture" class="footer-img">
+    </a>
+  </footer>
+
+</main>
