@@ -1,0 +1,81 @@
+h1 {
+  color: #ac5e05;
+  margin-bottom: 0;
+}
+
+.lead {
+  color: #5f3709;
+}
+
+.demo {
+  padding: 4px 20px 16px;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+}
+
+.demo code {
+  color: #f39923;
+  text-transform: none;
+}
+
+.hint {
+  color: #5f3709;
+  font-size: 0.9rem;
+}
+
+progress {
+  width: 100%;
+  height: 18px;
+  accent-color: #5f3709;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 16px;
+  background: #c4890c;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #c9b5bd;
+  cursor: not-allowed;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.preview {
+  margin-top: 16px;
+  padding: 4px 16px;
+  border-left: 4px solid #d15a0a;
+  background: #f8f1f4;
+}
+
+.preview-label {
+  margin-bottom: 0;
+  color: #85450a;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}

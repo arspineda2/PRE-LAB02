@@ -1,0 +1,26 @@
+.intro {
+  text-align: center;
+  padding-bottom: 22px;
+  margin-bottom: 28px;
+}
+
+.intro h1 {
+  margin-bottom: 4px;
+  color: #f39923;
+  font-size: 2.2rem;
+}
+
+.section-title{
+  color: #ac5e05;
+}
+
+.intro p {
+  color: #5f3709;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .intro h1 {
+    font-size: 1.7rem;
+  }
+}
